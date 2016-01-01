@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_VENDOR_KERNEL_HEADERS := device/sony/kitakami/kernel-headers
+PRODUCT_VENDOR_KERNEL_HEADERS := device/sony/kitakami-common/kernel-headers
 
 TARGET_BOARD_PLATFORM := msm8994
 
@@ -64,7 +64,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 24360501248
 BOARD_CACHEIMAGE_PARTITION_SIZE := 209715200
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 
-TARGET_RECOVERY_FSTAB = device/sony/kitakami/rootdir/fstab.kitakami
+TARGET_RECOVERY_FSTAB = device/sony/kitakami-common/rootdir/fstab.kitakami
 
 # GFX
 USE_OPENGL_RENDERER := true
@@ -98,10 +98,10 @@ WIFI_DRIVER_FW_PATH_AP      := "/vendor/firmware/fw_bcmdhd_apsta.bin"
 WIFI_DRIVER_FW_PATH_STA     := "/vendor/firmware/fw_bcmdhd.bin"
 
 # BT definitions for Broadcom solution
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/kitakami/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/kitakami-common/bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
-BOARD_BLUEDROID_VENDOR_CONF := device/sony/kitakami/bluetooth/vnd_generic.txt
+BOARD_BLUEDROID_VENDOR_CONF := device/sony/kitakami-common/bluetooth/vnd_generic.txt
 
 
 # GPS definitions for Qualcomm solution
@@ -112,7 +112,7 @@ TARGET_NO_RPC := true
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
-TARGET_SYSTEM_PROP := device/sony/kitakami/system.prop
+TARGET_SYSTEM_PROP := device/sony/kitakami-common/system.prop
 
 # NFC
 NFC_NXP_CHIP_TYPE := PN547C2
@@ -131,4 +131,4 @@ BUILD_KERNEL := true
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 
-BOARD_SEPOLICY_DIRS += device/sony/kitakami/sepolicy
+BOARD_SEPOLICY_DIRS += device/sony/kitakami-common/sepolicy

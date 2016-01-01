@@ -12,12 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-SONY_ROOT = device/sony/kitakami/rootdir
+SONY_ROOT = device/sony/kitakami-common/rootdir
 
 SOMC_PLATFORM := kitakami
 
 DEVICE_PACKAGE_OVERLAYS += \
-    device/sony/kitakami/overlay
+    device/sony/kitakami-common/overlay
 
 PRODUCT_COPY_FILES += \
     $(SONY_ROOT)/fstab.kitakami:root/fstab.kitakami \
