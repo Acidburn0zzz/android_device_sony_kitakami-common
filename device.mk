@@ -181,8 +181,8 @@ PRODUCT_PACKAGES += \
     libqomx_core \
     camera.msm8994
 
-PRODUCT_PACKAGES += \
-    keystore.msm8994
+# PRODUCT_PACKAGES += \
+#    keystore.msm8994
 
 # Misc
 PRODUCT_PACKAGES += \
