@@ -215,8 +215,8 @@ PRODUCT_PACKAGES += \
     libemoji
 
 # BoringSSL hacks
-PRODUCT_PACKAGES += \
-    libboringssl-compat
+# PRODUCT_PACKAGES += \
+#    libboringssl-compat
 
 # Enable Wifi calling
 PRODUCT_PROPERTY_OVERRIDES += \
